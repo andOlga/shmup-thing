@@ -1,0 +1,40 @@
+{
+  "_resourceType": "trigger",
+  "id": "a632d33e-c5ce-4abc-a736-6cc454c73b48",
+  "name": "",
+  "prefabId": "",
+  "x": 229,
+  "y": 0,
+  "symbol": "trigger_0",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 18,
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "0"
+      },
+      "id": "83630adb-67f2-46ad-be07-37f0be6c55a0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "property",
+          "target": "player",
+          "property": "pypos"
+        },
+        "units": "pixels"
+      },
+      "id": "7562da8b-5bc5-44e1-a230-6183d11a774e"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

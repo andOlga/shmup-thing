@@ -1,0 +1,30 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Lives",
+      "symbol": "var_lives"
+    },
+    {
+      "id": "1",
+      "name": "Score",
+      "symbol": "var_score"
+    },
+    {
+      "id": "2",
+      "name": "High Score",
+      "symbol": "var_high_score"
+    },
+    {
+      "id": "3",
+      "name": "Speed",
+      "symbol": "var_speed"
+    },
+    {
+      "id": "0949b4df-23b1-4d23-aca6-a2390d097da6__L0",
+      "name": "Current speed",
+      "symbol": "var_current_speed"
+    }
+  ]
+}

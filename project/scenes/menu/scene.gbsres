@@ -1,0 +1,117 @@
+{
+  "_resourceType": "scene",
+  "id": "04197d39-1068-4dd0-ac0d-548f7bee8279",
+  "_index": 1,
+  "name": "Menu",
+  "backgroundId": "c0ca62c8-7c6c-47ad-b1f7-e6b7890f5f55",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_2",
+  "x": 511,
+  "y": 416,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "8f600205-ad39-4bae-aab7-853ed07ed1cc"
+    },
+    {
+      "command": "EVENT_PEEK_DATA",
+      "args": {
+        "variableDest": "2",
+        "variableSource": "2",
+        "saveSlot": 0
+      },
+      "id": "084fbb74-f8de-4c2e-9f93-ea09192bc580"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "Score: $01$\nHigh score: $02$\nA = Speed toggle\nB = Shoot\nPress Start",
+        "x": 2,
+        "y": 6,
+        "location": "background"
+      },
+      "id": "a19793ec-2661-4a36-935f-5c0dcddcb161"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "start"
+              ]
+            },
+            "id": "0a7a0f1e-d2c5-4c3a-b0cc-2b459b60860e"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "1",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "647f1693-5d60-4dd9-9363-bd08e22b301f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "0",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "68992706-9d3a-4b5a-9716-d76ba46e62c6"
+          },
+          {
+            "command": "EVENT_RNG_SEED",
+            "args": {},
+            "id": "5792ceda-b25a-42e5-ac07-2ab979362372"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "0949b4df-23b1-4d23-aca6-a2390d097da6",
+              "x": {
+                "type": "number",
+                "value": 8
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "direction": "right",
+              "fadeSpeed": "2"
+            },
+            "id": "c1c4b899-18a4-4de3-abc1-9a197642ecfa"
+          }
+        ]
+      },
+      "id": "fef07722-38da-491b-b7cf-73a210db178f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

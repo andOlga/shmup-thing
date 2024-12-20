@@ -1,0 +1,140 @@
+{
+  "_resourceType": "scene",
+  "id": "0949b4df-23b1-4d23-aca6-a2390d097da6",
+  "_index": 0,
+  "name": "Game",
+  "backgroundId": "ebc9565d-5806-4de3-b610-ec47f3551a08",
+  "tilesetId": "",
+  "width": 255,
+  "height": 18,
+  "type": "SHMUP",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_1",
+  "x": 314,
+  "y": 190,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ENGINE_FIELD_STORE",
+            "args": {
+              "value": "3",
+              "engineFieldKey": "shooter_scroll_speed"
+            },
+            "id": "83bd1e96-bb14-4047-bc45-5291211986a1"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "3"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 16
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ENGINE_FIELD_SET",
+                  "args": {
+                    "engineFieldKey": "shooter_scroll_speed"
+                  },
+                  "id": "abb20698-b447-48df-b447-fde4045ac235"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ENGINE_FIELD_SET",
+                  "args": {
+                    "engineFieldKey": "shooter_scroll_speed",
+                    "value": {
+                      "type": "number",
+                      "value": 32
+                    }
+                  },
+                  "id": "14889658-6ba8-4633-b344-322874ef3893"
+                }
+              ]
+            },
+            "id": "8090ca88-3166-4cd3-9a12-63f72e36fd64"
+          },
+          {
+            "command": "EVENT_ENGINE_FIELD_STORE",
+            "args": {
+              "value": "3",
+              "engineFieldKey": "shooter_scroll_speed"
+            },
+            "id": "8ad78d30-8052-4f66-b6e6-50a43c7c97a9"
+          }
+        ]
+      },
+      "id": "9611fb71-3b48-49d0-88b2-3d6e2de44589"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 0,
+              "y": 0,
+              "directionType": "direction",
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "$self$",
+              "initialOffset": 0,
+              "speed": 4,
+              "animSpeed": 15,
+              "lifeTime": 4,
+              "loopAnim": false,
+              "destroyOnHit": true,
+              "collisionGroup": "2",
+              "collisionMask": [
+                "1"
+              ]
+            },
+            "id": "23f4c895-11a7-47a2-960f-56d771197c7f"
+          }
+        ]
+      },
+      "id": "e950e3e1-f2e6-4a3b-a2c0-faf173112930"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6"
+}
