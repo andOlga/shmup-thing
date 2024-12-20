@@ -23,7 +23,8 @@
           "a"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -96,7 +97,8 @@
           "b"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -131,6 +133,47 @@
         ]
       },
       "id": "e950e3e1-f2e6-4a3b-a2c0-faf173112930"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Paused.\nPress A button."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": 0,
+              "speedOut": 0,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "13b16b92-1bd2-4af8-9a54-7ab590b3c054"
+          }
+        ]
+      },
+      "id": "27f0d1b3-895c-459c-8028-6c4002fc90bd"
     }
   ],
   "playerHit1Script": [],
