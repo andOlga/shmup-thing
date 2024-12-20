@@ -33,6 +33,96 @@
         "units": "pixels"
       },
       "id": "7562da8b-5bc5-44e1-a230-6183d11a774e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "2272a0e8-d435-445d-b2ca-a06cece125e1",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "3f0d9f58-55a6-4379-8bb4-d770c7655fd9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "2d9889a1-30aa-4db4-b093-46d1820de32d",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "be6dc4ae-9188-4f90-84b9-267157b6c7e0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "e58ff591-f5a1-4094-a2e1-a622506813f0",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "28912a73-1c16-4de9-8f6c-3c83732c526c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "3c2b30fc-435d-46a5-8c63-bedce6b3967f",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "35ef31b1-16c2-4606-9450-e346f29d00ab"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "a713d06d-18d4-49d1-99fd-442870e8ec08",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "9742d446-1aad-4286-929d-f30b2b207684"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "e14b7de0-a0ad-45aa-8c67-3cac0bf091c1",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "4f965ee2-ba49-4824-9e2d-ec6e67608865"
     }
   ],
   "leaveScript": [],
